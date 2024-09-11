@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="popup.js" defer></script>
+    <link rel="stylesheet" href="index.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <form style="width: 275px; height: fit-content;">
+        <div class="logo"></div>
+
+        <label for="tone"><b>Tone:</b></label><br>
+        <div class="select-dropdown" name="" id="custom-tone" required>
+            <select>
+                <option value="Happy">Happy</option>
+                <option value="angry">Angry</option>
+                <option value="sad">Sad</option>
+                <option value="apologetic">Apologetic</option>
+                <option value="sincere">Sincere</option>
+            </select>
+        </div><br>
+
+        <label for="prompt"><b>Prompt:</b></label><br>
+        <textarea type="prompt" name="prompt" id="field" style="height: 40%; min-height: 100px; resize: none;" placeholder="Example: Complain to the HOA about recent trespassing incidents" required></textarea><br>
+        
+        <input class='submit-btn' id="submit" type="button" value="Generate Email">
+
+        <div class="output" id="emailOutput" style="margin-top: 20px;"></div>
+    </form>
+
+
+
+</body>
+</html>

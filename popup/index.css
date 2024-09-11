@@ -1,0 +1,95 @@
+html{
+  background: rgb(255,255,255);
+  background: linear-gradient(210deg, rgba(255,255,255,1) 58%, rgba(174,224,224,1) 100%);
+  padding-top: 5px;
+}
+
+form{
+  border: 3px solid #479191;
+  border-radius: 6px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.logo{
+  position: relative;
+  background-image: url('logo.png');
+  width: 300px;
+  height: 75px;
+  background-size: contain; /* Ensure the image scales correctly */
+  background-repeat: no-repeat;
+  top: -10px;
+}
+
+label{
+  font-family: 'Oswald';
+  font-size: 14px;
+}
+
+textarea{
+  border: 2px solid #479191;
+  border-radius: 5px;
+  width: 98%;
+} 
+
+.output{
+  padding-bottom: 5px;
+  font-size: 14px;  font-family: 'Open sans';
+}
+
+/** CUSTOM SELECT DROPDOWN MENU **/
+
+.select-dropdown {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  box-sizing: border-box;
+  border: 2px solid #479191;
+}
+.select-dropdown {
+  position: relative;
+  background-color: #E6E6E6;
+  border-radius: 6px;
+  width: fit-content
+}
+.select-dropdown select {
+  font-size: 1rem;
+  font-weight: normal;
+  padding: 8px 20px 8px 10px;
+  border: none;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.select-dropdown select:active, .select-dropdown select:focus {
+  outline: none;
+  box-shadow: none;
+}
+.select-dropdown:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  width: 0;
+  height: 0;
+  margin-top: -2px;
+  border-top: 5px solid #aaa;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+}
+
+/** CUSTOM SUBMIT BUTTON **/
+
+.submit-btn{
+  font-family: 'Oswald';
+  background-color: #8abfbf; /* Green */
+  border: 2px solid #479191;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.submit-btn:hover{
+  cursor: pointer;
+}
