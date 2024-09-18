@@ -1,19 +1,23 @@
-html{
-  background: rgb(255,255,255);
-  background: linear-gradient(210deg, rgba(255,255,255,1) 58%, rgba(174,224,224,1) 100%);
+html {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    210deg,
+    rgba(255, 255, 255, 1) 58%,
+    rgba(174, 224, 224, 1) 100%
+  );
   padding-top: 5px;
 }
 
-form{
+form {
   border: 3px solid #479191;
   border-radius: 6px;
   padding-left: 15px;
   padding-right: 15px;
 }
 
-.logo{
+.logo {
   position: relative;
-  background-image: url('logo.png');
+  background-image: url("logo.png");
   width: 300px;
   height: 75px;
   background-size: contain; /* Ensure the image scales correctly */
@@ -21,20 +25,21 @@ form{
   top: -10px;
 }
 
-label{
-  font-family: 'Oswald';
+label {
+  font-family: "Oswald";
   font-size: 14px;
 }
 
-textarea{
+textarea {
   border: 2px solid #479191;
   border-radius: 5px;
   width: 98%;
-} 
+}
 
-.output{
+.output {
   padding-bottom: 5px;
-  font-size: 14px;  font-family: 'Open sans';
+  font-size: 14px;
+  font-family: "Open sans";
 }
 
 /** CUSTOM SELECT DROPDOWN MENU **/
@@ -48,9 +53,9 @@ textarea{
 }
 .select-dropdown {
   position: relative;
-  background-color: #E6E6E6;
+  background-color: #e6e6e6;
   border-radius: 6px;
-  width: fit-content
+  width: fit-content;
 }
 .select-dropdown select {
   font-size: 1rem;
@@ -62,7 +67,8 @@ textarea{
   -moz-appearance: none;
   appearance: none;
 }
-.select-dropdown select:active, .select-dropdown select:focus {
+.select-dropdown select:active,
+.select-dropdown select:focus {
   outline: none;
   box-shadow: none;
 }
@@ -77,12 +83,13 @@ textarea{
   border-top: 5px solid #aaa;
   border-right: 5px solid transparent;
   border-left: 5px solid transparent;
+  pointer-events: none;
 }
 
 /** CUSTOM SUBMIT BUTTON **/
 
-.submit-btn{
-  font-family: 'Oswald';
+.submit-btn {
+  font-family: "Oswald";
   background-color: #8abfbf; /* Green */
   border: 2px solid #479191;
   border-radius: 5px;
@@ -90,6 +97,6 @@ textarea{
   font-weight: 500;
 }
 
-.submit-btn:hover{
+.submit-btn:hover {
   cursor: pointer;
 }
