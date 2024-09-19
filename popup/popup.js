@@ -4,16 +4,19 @@ document.getElementById("submit").addEventListener("click", async function () {
 
   try {
     // Send a POST request to your backend API
-    const response = await fetch("http://localhost:3200/api/generate-email", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        tone: tone,
-        promptText: promptText,
-      }),
-    });
+    const response = await fetch(
+      "https://king-prawn-app-aebvr.ondigitalocean.app/api/generate-email",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          tone: tone,
+          promptText: promptText,
+        }),
+      }
+    );
 
     // Checking if API call was successful
     if (!response.ok) {

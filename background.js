@@ -23,7 +23,7 @@ chrome.contextMenus.onClicked.addListener(async (info, tab) => {
     // API call to the backend
     try {
       const response = await fetch(
-        "http://localhost:3200/api/context-menu/generate-email",
+        "https://king-prawn-app-aebvr.ondigitalocean.app/api/context-menu/generate-email",
         {
           method: "POST",
           headers: {
