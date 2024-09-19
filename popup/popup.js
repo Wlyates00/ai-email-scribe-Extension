@@ -1,4 +1,6 @@
 document.getElementById("submit").addEventListener("click", async function () {
+  document.getElementById("emailOutput").innerText = "[Generating]";
+
   const tone = document.getElementById("custom-tone").value;
   const promptText = document.getElementById("field").value;
 
