@@ -5,7 +5,7 @@ document.getElementById("submit").addEventListener("click", async function () {
   try {
     // Send a POST request to your backend API
     const response = await fetch(
-      "https://king-prawn-app-aebvr.ondigitalocean.app/api/generate-email",
+      "https://scribe-api-rws7f.ondigitalocean.app/api/generate-email",
       {
         method: "POST",
         headers: {
